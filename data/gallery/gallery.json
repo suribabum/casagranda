@@ -1,0 +1,27 @@
+{
+  "showroomDisplays":[
+    {
+      "thumbnailSrc":"images/Gallery_photo1.jpg",
+      "url":"images/Gallery_photo1.jpg",
+      "title":"Image 1"
+    },
+    {
+      "thumbnailSrc":"images/Gallery_photo2.jpg",
+      "url":"images/Gallery_photo2.jpg",
+      "title":"Image 2"
+    },
+    {
+      "thumbnailSrc":"images/Gallery_photo4.jpg",
+      "url":"images/Gallery_photo4.jpg",
+      "title":"Image 3"
+    }
+  ],
+  "clientInstallations":[
+    {
+      "thumbnailSrc":"images/bath/bath1.jpg",
+      "url":"images/bath/bath1.jpg",
+      "title":"Image 5"
+    }
+  ]
+
+}

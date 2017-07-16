@@ -1,0 +1,118 @@
+<div class="wraper">
+    <div class="left_panel" ng-class="{'collapsed':!slideToggle, 'expanded':slideToggle}">
+        <img ng-src="{{slideToggleSrc}}" class="toogle" ng-click="slideDock($event)"/>
+        <div class="logoWrapper">
+            <a href="#/home"><img src="images/logo.png"  class="logo" /></a>
+        </div>
+        <div class="innerLeftPanel">
+        <!--<a href="#/home"><img src="images/logo.png"  class="logo" /></a>-->
+        <nav>
+            <ul>
+                <li><a href="#/home1">Home</a></li>
+                <li><a href="pages/about.html" ng-click="switchToPage($event, 'lg', 'aboutUsController')">About Us</a></li>
+                <li><a href="pages/gallery.html" ng-click="switchToPage($event, 'lg', 'galleryController')">Gallery</a></li>
+                <li>
+                    <a href="#" ng-click="toggleScavMenu($event)" ng-class="{active:!isSacvCollapsed}">Scavolini<span><img src="{{toggleIconSrc}}" /></span></a>
+
+                    <ul collapse="isSacvCollapsed">
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/kitchens')">KITCHENS</a></li>
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/Living')">LIVING</a></li>
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/Bathrooms')">BATHROOM FURNISHINGS</a></li>
+                    </ul>
+
+
+
+                </li>
+                <li><a href="#"  ng-click="toggleKohlerMenu($event)">Kohler <span><img src="{{toggleKohIconSrc}}" /></span></a>
+                    <ul collapse="isKohCollapsed">
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.us.kohler.com/us/Bathroom/merchandising/100005.htm')">BATHROOMS</a></li>
+                        
+                    </ul>
+
+                </li>
+                <li><a href="#Contact">Contact Us</a></li>
+                <li><a href="pages/locations.html" ng-click="switchToPage($event, 'lg', 'locationController')">Locations</a></li>
+            </ul>
+        </nav>
+
+        <div class="testmonials">
+            <h3>Testimonials</h3>
+            <carousel interval="testmonialsInterval">
+                <slide ng-repeat="slide in testimonials" active="slide.active">
+                    <p>{{slide.content}}
+                        <span><br />{{slide.author}}</span></p>
+                </slide>
+            </carousel>
+
+
+        </div>
+
+        <footer>
+            <div class="socialLinks">
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/in.png" /></a>
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/tweet.png"/></a>
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/face.png" /></a>
+            </div>
+        </footer>
+        </div>
+
+    </div>
+    <div class="bootom_wraper">
+        <p>
+            <a href="#/Scavolini-kitchens" ng-click="loadIframe($event, 'http://www.scavolini.us/kitchens')">KITCHENS</a>
+            <a href="#/Scavolini-living" ng-click="loadIframe($event, 'http://www.scavolini.us/Living')">LIVING</a>
+            <a href="#/Scavolini-bathroomFurnishing" ng-click="loadIframe($event, 'http://www.scavolini.us/Bathrooms')">BATH FURNISHING</a>
+            <a href="#/kohler-sanitory" ng-click="loadIframe($event, 'http://www.us.kohler.com/us/Bathroom/merchandising/100005.htm')">SANITARY</a>
+            <!--<a href="#/kohler-generators" ng-click="loadIframe($event, 'http://www.kohler.com/corporate/business/engines-and-generators.html')">GENERATORS</a>-->
+
+
+
+        </p>
+    </div>
+    <div class="scrollWrapper" ng-hide="showIframe">
+
+     <!--   <a id="prevslide" class="load-item"></a>
+        <a id="nextslide" class="load-item"></a>-->
+
+        <!--<slider images="casagrandaImages"/>-->
+
+        <div id="controls-wrapper" class="load-item">
+            <div id="slidecaption"></div>
+            <div id="controls">
+
+
+       <!--<img src="images/main-bg.jpg" />-->
+        <ul id="slide-list" class="hidden-sm">
+        </ul>
+                </div>
+            </div>
+
+      </div>
+      <div class="iframeWrapper" ng-if="showIframe">
+          <iframe ng-src="{{selectedSrc}}"></iframe>
+      </div>
+  </div>
+
+<script type="text/javascript">
+
+    jQuery(function($){
+        console.log('casagrandaImages::', casagrandaImages);
+        $.supersized({
+
+            // Functionality
+            slide_interval          :   5000,		// Length between transitions
+            transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed		:	700,		// Speed of transition
+
+            // Components
+            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            slides 					:  	casagrandaImages
+
+        });
+
+    });
+
+
+
+</script>
+

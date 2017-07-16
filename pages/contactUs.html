@@ -1,0 +1,56 @@
+<div class="row">
+    <span class="closeWrapper">
+    <img src="images/close-box-icon.png" class="close_btn closePad"  ng-click="closeModalPopup()"/>
+        </span>
+    <div class="col-md-6"><h2>Contact Us</h2>
+    <div class="col-md-10">
+        <p>
+            <strong>Casa Granda</strong><br />
+            Road #36, 101, KKR Square,<br />
+            Opp. Best Western Hotel,<br />
+            Jubilee Hills,<br />
+            Hyderabad-500033,<br />
+            <strong>PHONE:</strong>  040-24024204
+
+        </p>
+    </div>
+    <br />
+    <h2 class="col-md-10">contact form</h2>
+    <form ng-submit="submit()" id="myform" >
+
+        <div class="form-group">
+            <div class="col-md-10">
+
+                <input type="text" class="form-control" ng-model = "user.name" name="name" required="true" placeholder="Full Name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="text" class="form-control" ng-model = "user.email" name="email" required="true" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="tel" class="form-control" ng-model = "user.phoneNo" name="phoneno" required="true" placeholder="Phone Number"  />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <textarea class="form-control" rows="3"  ng-model = "user.msg" name="msg" required="true" placeholder="Your Message Here..."></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" class="btn btn-danger pull-right" value="SUBMIT">
+            </div>
+        </div>
+    </form>
+
+</div>
+    <div class="col-md-6"><h2>Locations</h2>
+
+        <div id="map" style="width: 390px; height: 400px;background:#fff;"></div>
+       <!-- <img src="images/map.png" width="100%" />-->
+    </div>
+</div>

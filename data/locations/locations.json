@@ -1,0 +1,79 @@
+{
+  "data":{
+    "locations":[
+      {
+        "city":"SCAVOLINI STORE HYDERABAD",
+        "state":"Telangana",
+        "country":"India",
+        "address":"ROAD #36 JUBILEE HILLS,",
+        "address2":"101 KKR SQUARE,OPP.BEST WESTERN HOTEL,",
+        "address3":"500034,HYDERABAD",
+        "telephone":"+91 09849647752",
+        "latitude":17.3700,
+        "longitude":78.4800,
+        "addressUrl":"https://www.google.co.in/maps/place/Casa+Granda/@17.4325063,78.3968724,14z/data=!4m5!1m2!2m1!1sroad+no+36,Opp.+Best+Western+Hotel,+Jubilee+Hills,+Hyderabad-500033,+040-24024204+!3m1!1s0x3bcb91448a25d64b:0x625c8b6b64c8cb8d"
+      },
+      {
+        "city":"SCAVOLINI STORE MUMBAI",
+        "state":"Maharashtra",
+        "country":"India",
+        "address":"LOWER PAREL, FORUM HOUSE,",
+        "address2":"RAGHUVANSHI ESTATE, SENA,",
+        "address3":"400013,MUMBAI",
+        "telephone":"+91 09833509146",
+        "latitude":18.9750,
+        "longitude":72.8258,
+        "addressUrl":"https://www.google.co.in/maps/place/Casa+Grande/@19.000169,72.827043,19z/data=!3m1!4b1!4m2!3m1!1s0x3be7ce92a5d8125d:0x62a8b7e7c86022d7"
+      },
+      {
+        "city":"SCAVOLINI STORE DELHI",
+        "state":"Delhi",
+        "country":"India",
+        "address":"30 COMMUNITY CENTER,",
+        "address2":"EAST KAILASH,",
+        "address3":"110065,NEW DELHI",
+        "telephone":"+91 9810162207",
+        "latitude":28.6139,
+        "longitude":77.2090,
+        "addressUrl":"https://www.google.co.in/maps/search/COMMUNITY+CENTER+EAST+KAILASH,+110065+NEW+DELHI/@28.558139,77.2458961,206m/data=!3m1!1e3"
+      },
+      {
+        "city":"SCAVOLINI STORE AHMEDABAD",
+        "state":"Gujarat",
+        "country":"India",
+        "address":"GF-5, BALLESHWAR SQUARE,",
+        "address2":"OPP ISKCON,",
+        "address3":"380015,AHMEDABAD",
+        "telephone":"+91 9825208533",
+        "latitude":23.0300,
+        "longitude":72.5800,
+        "addressUrl":"https://www.google.co.in/maps/place/Baleshwar+Square,+Satellite,+Ahmedabad,+Gujarat+380015/@23.0288111,72.5088316,21z/data=!4m2!3m1!1s0x395e9b377cfec983:0x8b5c7c7c89b98d7c"
+      },
+      {
+        "city":"SCAVOLINI STORE COCHIN",
+        "state":"Kerala",
+        "country":"India",
+        "address":"LIPID HOUSE,",
+        "address2":"MAIN AVENUE, PANAMPALLY NAGAR,",
+        "address3":"682036,COCHIN",
+        "telephone":"+91 98 46088122",
+        "latitude":9.9700,
+        "longitude":76.2800,
+        "addressUrl":"https://www.google.co.in/maps/place/SCAVOLINI+-+IMPORTED+MODULAR+KITCHEN+IN+KOCHI,+INTERNATIONAL+MODULAR+KITCHEN+IN+KOCHI/@9.958843,76.296248,17z/data=!3m1!4b1!4m2!3m1!1s0x3b0872c73d778a25:0xc769e8632576fa45"
+      },
+      {
+        "city":"SCAVOLINI STORE CHENNAI",
+        "state":"Tamil Nadu",
+        "country":"India",
+        "address":"11/6 BISHOP,",
+        "address2":"WALLERS AV., MYLAPORE,",
+        "address3":"600004,CHENNAI",
+        "telephone":"+91 09551051510",
+        "latitude":13.0827,
+        "longitude":80.2707,
+        "addressUrl":"https://www.google.co.in/maps/place/11,+Bishop+Wallers+Ave+W,+CIT+Colony,+Mylapore,+Chennai,+Tamil+Nadu+600004/@13.043905,80.2604399,17z/data=!3m1!4b1!4m2!3m1!1s0x3a5266312d75007f:0x7eea529fd8aaca98"
+      }
+    ]
+
+  }
+}

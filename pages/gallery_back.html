@@ -1,0 +1,19 @@
+<div class="row">
+    <span class="closeWrapper">
+        <img src="images/close-box-icon.png" class="close_btn closePad"  ng-click="closeModalPopup()"/>
+    </span>
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+            <ul  id="gallery">
+                <li ng-repeat="item in galleryContainer">
+                    <a ng-click="openLightboxModal($index)">
+                        <img ng-src="{{item.thumbnailSrc}}" class="img-thumbnail"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+

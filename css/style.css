@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	font-family: 'Abel', sans-serif;
+}
+html, body {
+  height: 100%;
+}
+body{
+	margin:0;
+	padding:0;
+  height: 100%;
+	font-family: 'Abel', sans-serif;
+	
+}
+.wraper{
+	width:100%;
+  height: auto !important;
+	 min-height: 100%;
+	
+	  position:absolute;
+
+		  float:left;
+}
+.scrollWrapper{
+	width:100%;
+	float: left;
+}
+.left_panel{
+	width:260px;
+float:left;
+	 min-height: 100%;
+	 position:absolute;
+background:url(../images/bg.png) repeat 0 0;
+	transition: width 1.5s;
+	-webkit-transition:  width 1.5s;
+	-moz-transition: width 1.5s;
+	z-index:999;
+	
+	
+}
+.left_panel.collapsed{
+	width:2px!important;
+}
+.logoWrapper{
+	width:100%;
+	float: left;
+	margin:30px 0;
+}
+.logoWrapper a{
+	float: left;
+	width:100%;
+	text-align: center;
+}
+
+img.logo{
+	/*margin:30px 0 30px 8px;*/
+	padding:0;
+	/*float: left;*/
+}
+nav{
+	width:100%;
+	float:left;
+	margin:0 0 20px 0;
+	
+}
+nav ul{
+	list-style:none;
+}
+nav ul li{
+	list-style:none;
+	width:100%;
+	margin:0 0 1px 0;
+	float:left;
+	
+}
+
+nav ul li a{
+	width:100%;
+	float:left;
+	margin:0;
+	padding:5px 0;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Abel', sans-serif;
+	color:#fff;
+	background:url(../images/bg.png) repeat 0 0;
+	position:relative;
+	font-size: 18px;
+}
+nav ul li a:active{
+	color:#fff;
+}
+nav ul li a span{
+	width:10px;
+	height:10px;
+	right:10px;
+	top:10px;
+	position:absolute;
+}
+nav ul li a:hover{
+	background:url(../images/bg-hover.png) repeat 0 0;
+	color:#fff;
+	text-decoration:none;
+}
+nav ul li a:focus{
+	color:#fff;
+}
+nav ul li a.active{
+	  background:url(../images/bg-hover.png) repeat 0 0;
+	  color:#fff;
+	  text-decoration:none;
+  }
+nav ul li ul li a{
+	background:#000;
+	font-size:14px;
+}
+
+nav ul li a.active + ul{
+	border-bottom: 1px solid #903C25;
+}
+nav ul li ul li a.hover{
+	color: #fff!important;
+}
+.testmonials{
+	width:100%;
+	float:left;
+	padding:10px;
+	min-height: 105px;
+ 	box-sizing: border-box;
+	background:url(../images/bg.png) repeat 0 0;
+	margin-top: 15px;
+	height:165px;
+}
+.testmonials h3{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+}
+.testmonials p{
+	background:url(../images/testmoni.png) no-repeat 0 0;
+	padding:0px 0 10px 15px;
+		font-family: 'Abel', sans-serif;
+	color:#fff;
+	margin-bottom:20px;
+	float:left;
+	width:100%;
+
+}
+.testmonials p span{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:13px;
+	color:#fff;
+	float:right;
+	
+}
+footer{
+ 
+
+position: absolute;
+bottom:10px;
+width:100%;
+  clear:both;
+
+
+}
+footer a{
+	float:right;
+	margin:0 6px 0 0;
+	padding:0;
+	
+}
+footer a img{
+	width:20px;
+}
+footer div.socialLinks{
+	width:65%;
+	text-align: center;
+}
+.toogle{
+	float:right;
+	margin:20px -31px 0 0;
+	cursor:pointer;
+}
+.bootom_wraper{
+	width:100%;
+	position:fixed;
+	bottom:0;
+	z-index: 999;
+}
+.bootom_wraper p{
+	text-align:center;
+	margin:0;
+	padding:0;
+
+}
+.bootom_wraper p a{
+	padding:5px 10px;
+	margin:0 1px 0 0!important;
+
+		font-family: 'Abel', sans-serif;
+	color:#fff;
+	text-decoration:none;
+	background:url(../images/bg.png) repeat 0 0;
+}
+.bootom_wraper p a:hover{
+		background:url(../images/bg-hover.png) repeat 0 0;
+}
+.iframeWrapper {
+	width:100%;
+	float:left;
+}
+.iframeWrapper iframe{
+	/*min-height: 760px!important;*/
+	width:100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 100%;
+}
+.testmonials .carousel-indicators, .testmonials .carousel-control{
+	display:none;
+}
+
+.scrollWrapper .srcTitle{
+	color: crimson;
+	position: absolute;
+	right: 150px;
+	bottom: 45px;
+	font-size: 26px;
+	font-family: verdana;
+	font-style: italic;
+}
+.slide.ng-hide-add, .slide.ng-hide-remove {
+	-webkit-transition:all linear 0.5s;
+	-moz-transition:all linear 0.5s;
+	-o-transition:all linear 0.5s;
+	transition:all linear 0.5s;
+	display:block!important;
+}
+
+.slide.ng-hide-add.ng-hide-add-active,.slide.ng-hide-remove {
+	opacity:0;
+}
+
+.slide.ng-hide-add,.slide.ng-hide-remove.ng-hide-remove-active {
+	opacity:1;
+}
+.closeWrapper{
+	position: absolute;
+	right:0;
+	top:20px;
+	z-index: 9999;
+	
+	cursor: pointer;
+}
+.closeWrapper img{
+	width:20px;
+	height:20px;
+	float:left;
+}
+.arrows{
+	position: absolute;
+	bottom: 50px;
+	right: 20px;
+}
+
+.arrows img{
+	height: 32px;
+}
+
+.modal-content{
+	background: #000!important;
+	border-radius:0!important;
+	box-shadow: none!important;
+	padding:20px;
+	z-index:99999999999999999999999999999999!important;
+
+}
+.lightbox-modal .modal-content{
+	background: #fff!important;
+	border-radius: 10px!important;
+	padding-top: 0!important;
+}
+.modal-lg {
+	float: right;
+	margin:80px 5% 0 0!important;
+}
+
+
+.modal-dialog .modal-content h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:16px;
+	font-weight: bold;
+	color: #fff;
+	margin: 0 0 15px 0!important;
+	text-transform: uppercase;
+
+}
+.modal-dialog .modal-content p{
+	font-family: 'Abel', sans-serif;
+	color:#fff;
+
+}
+.fullBg {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.gallery ul li {
+	float: left;
+	margin: 5px;
+
+}
+.gallery ul li img.img-thumbnail{
+	width:208px!important;
+	height: 128px!important;
+}
+.innerLeftPanel {
+	width:100%;
+	float:left;
+}
+.selectedGalleryWrap{
+	width:100%;
+	float:left;
+}
+.selectedGalleryWrap .selectedWrapper{
+	width:100%;
+	float:left;
+	padding:5px;
+	border:1px solid #fff;
+	box-sizing: border-box;
+}
+.selectedGalleryWrap .selectedWrapper img{
+	width:100%;
+	height:450px;
+	float:left;
+}
+.selectedGalleryWrap .selectedWrapper span{
+	font:18px verdana, arial;
+	color:#fff;
+	position: absolute;
+	bottom: 20px;
+}
+.gallery{
+	width:100%;
+	float: left;
+}
+.gallery ul{
+	width:100%;
+	float: left;
+	list-style: none;
+}
+.gallery ul li{
+	cursor: pointer;
+}
+.modal.in .modal-dialog{
+	min-height: 450px;
+}
+.hasMultiple{
+	z-index: 9999!important;
+}
+.closePad{
+	margin-right: 15px;
+}
+.locationContainer{
+	width:100%;
+	float: left;
+	margin-top: 10px;
+}
+.locationContainer ul{
+	float: left;
+	list-style: none;
+	width:100%;
+}
+.locationContainer ul li{
+	width:98%;
+	float: left;
+	margin: 0px 3px;
+	padding:33px 20px;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #174453;
+	position: relative;
+	cursor: pointer;
+}
+
+.locationContainer ul li:first-child{
+	background: url("../images/map_image1.png") repeat-x scroll 0 0
+}
+.locationContainer ul li:nth-child(2){
+	background: url('../images/map_image2.png') repeat-x 0 0;
+}
+.locationContainer ul li:nth-child(3){
+	background: url('../images/map_image3.png') repeat-x 0 0;
+}
+.locationContainer ul li:nth-child(4){
+	background: url('../images/map_image4.png') repeat-x 0 0;
+}
+.locationContainer ul li:nth-child(5){
+	background: url('../images/map_image5.png') repeat-x 0 0;
+}
+.locationContainer ul li:nth-child(6){
+	background: url('../images/map_image6.png') repeat-x 0 0;
+}
+.locationContainer ul li:hover{
+	background: #ccc;
+}
+.locationContainer ul li:hover .addressWrapper{
+	display: block;
+}
+.locationContainer ul li .addressWrapper{
+	color: #333;
+	font-family: verdana, arial;
+	font-size: 14px;
+	font-weight: bold;
+	right: 10px;
+	padding: 3px;
+	position: absolute;
+	top: 5px;
+	width: 260px;
+	z-index: 9999999;
+	display: none;
+}
+.locationContainer ul li a{
+	/*color:#174453;*/
+	color:#853015;
+	font:18px verdana;
+
+}
+.form-group input, .form-group textarea{
+	margin-bottom: 6px;
+}
+
+
+.lightbox-image-container > img {
+	height: 100% !important;
+	border-radius: 10px!important;
+	width: 100% !important;
+}
+.lightbox-modal  .modal-body {
+padding: 0!important;
+}
+.lightbox-nav {
+position: absolute;
+	bottom: -50px;
+	z-index: 99999999999;
+}
+
+
+.lightbox-nav .close {
+	display: block;
+	position: absolute;
+	top:-43px!important;
+	cursor: pointer;
+}
+
+.gallery ul li a{
+	color:#fff;
+	font:bold 14px verdana;
+}
+
+.gallery ul li.active a, .nav-tabs>li>a:hover{
+	color:#428bca!important;
+}
+.gallery .galleryContent{
+
+	/*overflow: hidden;
+	overflow-y: auto;*/
+}
+
+.gallery .tabContent{
+   width:100%;
+   height:400px;
+   float: left;
+}
+.gallery .slimScrollBar{
+   background: #fff!important;
+}
+
+.gallery ul li {
+   float: left;
+   margin: 10px 5px!important;
+   
+
+}

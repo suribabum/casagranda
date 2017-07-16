@@ -1,0 +1,22 @@
+<!--
+<div class="slider">
+    <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+        <span class="srcTitle">{{image.title}}</span>
+        <img ng-src="images/{{image.src}}"/>
+    </div>
+    <div class="arrows">
+        <a href="#" ng-click="prev($event)"><img src="images/left-arrow.png"/></a> <a href="#" ng-click="next($event)"><img src="images/right-arrow.png"/></a>
+    </div>
+</div>-->
+<div class="ng-fader">
+    <ul>
+        <li ng-repeat="slide in images" ng-click="toggleStartStop()" ng-swipe-right="sliderBack()" ng-swipe-left="sliderForward()">
+            <img data-ng-src="{{slide.src}}" data-ng-alt="{{slide.alt}}" ng-show="selectedImage==$index">
+            <span class="srcTitle" ng-bind="{{slide.desc}}"></span>
+        </li>
+    </ul>
+    </div>
+<div class="ng-fader-pagination">    <ul>
+        <li ng-repeat="i in dots(numberOfImages) track by $index" ng-class="{current: selectedImage==$index}" ng-click="setSelected($index)"></li>
+    </ul>
+</div>

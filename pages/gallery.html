@@ -1,0 +1,55 @@
+<div class="row">
+    <span class="closeWrapper">
+        <img src="images/close-box-icon.png" class="close_btn closePad"  ng-click="closeModalPopup()"/>
+    </span>
+        <h2>Gallery</h2>
+
+        <div class="gallery page-content">
+
+            <tabset justified="true">
+                <tab heading="Showroom Displays">
+<div class="tabContent">
+                    <ul class="galleryContent">
+                        <li ng-repeat="item in showroomDisplays">
+                            <a ng-click="openLightboxModal($index, showroomDisplays)">
+                                <img ng-src="{{item.thumbnailSrc}}" class="img-thumbnail"/>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </tab>
+                <tab heading="Client Installations">
+                    <div class="tabContent">
+                    <ul class="galleryContent">
+                    
+                        <li ng-repeat="item in clientInstallations">
+                            <a ng-click="openLightboxModal($index, clientInstallations)">
+                                <img ng-src="{{item.thumbnailSrc}}" class="img-thumbnail"/>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function(){
+
+        setTimeout(function(){
+        $('.gallery .tabContent ul').slimScroll({
+            height: 'auto',
+            railVisible: true,
+            alwaysVisible: true
+        });
+        }, 100);
+
+    });
+</script>
+
+
+

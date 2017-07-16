@@ -1,0 +1,70 @@
+{
+  "showroomDisplays":[
+    {
+      "thumbnailSrc":"images/kitchens/kitchen1.jpg",
+      "url":"images/kitchens/kitchen1.jpg",
+      "title":"Image 1"
+    },
+    {
+      "thumbnailSrc":"images/kitchens/kitchen2.jpg",
+      "url":"images/kitchens/kitchen2.jpg",
+      "title":"Image 2"
+    },
+    {
+      "thumbnailSrc":"images/living/living1.jpg",
+      "url":"images/living/living1.jpg",
+      "title":"Image 3"
+    },
+    {
+      "thumbnailSrc":"images/living/living2.jpg",
+      "url":"images/living/living2.jpg",
+      "title":"Image 4"
+    },{
+      "thumbnailSrc":"images/kitchens/kitchen1.jpg",
+      "url":"images/kitchens/kitchen1.jpg",
+      "title":"Image 1"
+    },
+    {
+      "thumbnailSrc":"images/kitchens/kitchen2.jpg",
+      "url":"images/kitchens/kitchen2.jpg",
+      "title":"Image 2"
+    },
+    {
+      "thumbnailSrc":"images/living/living1.jpg",
+      "url":"images/living/living1.jpg",
+      "title":"Image 3"
+    },
+    {
+      "thumbnailSrc":"images/living/living2.jpg",
+      "url":"images/living/living2.jpg",
+      "title":"Image 4"
+    },{
+      "thumbnailSrc":"images/kitchens/kitchen1.jpg",
+      "url":"images/kitchens/kitchen1.jpg",
+      "title":"Image 1"
+    },
+    {
+      "thumbnailSrc":"images/kitchens/kitchen2.jpg",
+      "url":"images/kitchens/kitchen2.jpg",
+      "title":"Image 2"
+    },
+    {
+      "thumbnailSrc":"images/living/living1.jpg",
+      "url":"images/living/living1.jpg",
+      "title":"Image 3"
+    },
+    {
+      "thumbnailSrc":"images/living/living2.jpg",
+      "url":"images/living/living2.jpg",
+      "title":"Image 4"
+    }
+  ],
+  "clientInstallations":[
+    {
+      "thumbnailSrc":"images/bath/bath1.jpg",
+      "url":"images/bath/bath1.jpg",
+      "title":"Image 5"
+    }
+  ]
+
+}

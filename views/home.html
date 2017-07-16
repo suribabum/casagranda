@@ -1,0 +1,155 @@
+<div ng-controller="homeController" class="ng-scope">
+        <div class="wraper">
+    <div class="left_panel expanded">
+        <img ng-src="images/close.png" class="toogle" ng-click="slideDock($event)" src="images/close.png">
+        <div class="logoWrapper">
+            <a href="#/home"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div class="innerLeftPanel">
+        <!--<a href="#/home"><img src="images/logo.png"  class="logo" /></a>-->
+        <nav>
+            <ul>
+                <li><a href="#/home1">Home</a></li>
+                <li><a href="pages/about.html" ng-click="switchToPage($event, 'lg', 'aboutUsController')">About Us</a></li>
+                <li><a href="pages/gallery.html" ng-click="switchToPage($event, 'lg', 'galleryController')">Gallery</a></li>
+                <li>
+                    <a href="#" ng-click="toggleScavMenu($event)" ng-class="{active:!isSacvCollapsed}">Scavolini<span><img src="images/pluse.png"></span></a>
+
+                    <ul collapse="isSacvCollapsed" class="collapse" style="height: 0px;">
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/kitchens')">KITCHENS</a></li>
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/Living')">LIVING</a></li>
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.scavolini.us/Bathrooms')">BATHROOM FURNISHINGS</a></li>
+                    </ul>
+
+
+
+                </li>
+                <li><a href="#" ng-click="toggleKohlerMenu($event)">Kohler <span><img src="images/pluse.png"></span></a>
+                    <ul collapse="isKohCollapsed" class="collapse" style="height: 0px;">
+                        <li><a href="#" ng-click="loadIframe($event, 'http://www.us.kohler.com/us/Bathroom/merchandising/100005.htm')">BATHROOMS</a></li>
+                        
+                    </ul>
+
+                </li>
+                <li><a href="pages/contactUs.html" ng-click="switchToPage($event, 'lg', 'contactUsController')">Contact Us</a></li>
+                <li><a href="pages/locations.html" ng-click="switchToPage($event, 'lg', 'locationController')">Locations</a></li>
+            </ul>
+        </nav>
+
+        <div class="testmonials">
+            <h3>Testimonials</h3>
+            <div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel ng-isolate-scope" ng-swipe-right="prev()" ng-swipe-left="next()" interval="testmonialsInterval">
+    <ol class="carousel-indicators" ng-show="slides.length > 1">
+        <!-- ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope"></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope active"></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope"></li><!-- end ngRepeat: slide in slides track by $index -->
+    </ol>
+    <div class="carousel-inner" ng-transclude="">
+                <!-- ngRepeat: slide in testimonials --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-isolate-scope active left" ng-transclude="" ng-repeat="slide in testimonials" active="slide.active">
+                    <p class="ng-binding ng-scope">I am very happy with Scavolini kitchens and their service.
+                        <span class="ng-binding"><br>Mr. Gopichand Actor</span></p>
+                </div><!-- end ngRepeat: slide in testimonials --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-isolate-scope next left" ng-transclude="" ng-repeat="slide in testimonials" active="slide.active">
+                    <p class="ng-binding ng-scope">Casa granda is the best one stop solution for bathrooms and kitchens.
+                        <span class="ng-binding"><br>Mr. Kumar Architect</span></p>
+                </div><!-- end ngRepeat: slide in testimonials --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-isolate-scope" ng-transclude="" ng-repeat="slide in testimonials" active="slide.active">
+                    <p class="ng-binding ng-scope">Amazing showroom and products, would recommend to all.
+                        <span class="ng-binding"><br>Mr. Hari Businessman</span></p>
+                </div><!-- end ngRepeat: slide in testimonials -->
+            </div>
+    <a class="left carousel-control" ng-click="prev()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" ng-click="next()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+        </div>
+
+        <footer>
+            <div class="socialLinks">
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/in.png"></a>
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/tweet.png"></a>
+            <a href="https://www.facebook.com/pages/Casa-Granda/153964248099307" target="_blank"> <img src="images/face.png"></a>
+            </div>
+        </footer>
+        </div>
+
+    </div>
+    <div class="bootom_wraper">
+        <p>
+            <a href="#/Scavolini-kitchens" ng-click="loadIframe($event, 'http://www.scavolini.us/kitchens')">KITCHENS</a>
+            <a href="#/Scavolini-living" ng-click="loadIframe($event, 'http://www.scavolini.us/Living')">LIVING</a>
+            <a href="#/Scavolini-bathroomFurnishing" ng-click="loadIframe($event, 'http://www.scavolini.us/Bathrooms')">BATH FURNISHING</a>
+            <a href="#/kohler-sanitory" ng-click="loadIframe($event, 'http://www.us.kohler.com/us/Bathroom/merchandising/100005.htm')">SANITARY</a>
+            <!--<a href="#/kohler-generators" ng-click="loadIframe($event, 'http://www.kohler.com/corporate/business/engines-and-generators.html')">GENERATORS</a>-->
+
+
+
+        </p>
+    </div>
+    <div class="scrollWrapper" ng-hide="showIframe">
+
+     <!--   <a id="prevslide" class="load-item"></a>
+        <a id="nextslide" class="load-item"></a>-->
+
+        <!--<slider images="casagrandaImages"></slider>-->
+
+        <div id="controls-wrapper" class="load-item" style="display: block;">
+            <div id="slidecaption">SCAVOLINI KITCHENS</div>
+            <div id="controls">
+
+
+       <!--<img src="images/main-bg.jpg" />-->
+        <ul id="slide-list" class="hidden-sm" style="margin-left: -51px;"><li class="slide-link-0 current-slide"><a></a></li><li class="slide-link-1"><a></a></li><li class="slide-link-2"><a></a></li><li class="slide-link-3"><a></a></li><li class="slide-link-4"><a></a></li><li class="slide-link-5"><a></a></li></ul>
+                </div>
+            </div>
+
+      </div>
+      <!-- ngIf: showIframe -->
+  </div>
+
+<script type="text/javascript" class="ng-scope">
+
+    jQuery(function($){
+        console.log('casagrandaImages::', casagrandaImages);
+        $.supersized({
+
+            // Functionality
+            slide_interval          :   5000,		// Length between transitions
+            transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed		:	700,		// Speed of transition
+
+            // Components
+            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            slides 					:  	casagrandaImages
+
+        });
+
+    });
+
+
+
+</script>
+
+</div>
+    </div>
+    <!--<link rel="stylesheet" href="css/carousel.css"/>-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+<ul id="supersized" class="quality" style="visibility: visible;"><li class="slide-0 activeslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/kitchens/kitchen1.jpg" style="width: 1349px; left: 0px; top: -278px; height: 755.44px;"></a></li><li class="slide-1" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/kitchens/kitchen2.jpg" style="width: 1349px; left: 0px; top: -278px; height: 755.44px;"></a></li><li class="slide-2" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/living/living1.jpg" style="height: 620.54px; width: 1349px; left: 0px; top: -211px;"></a></li><li class="slide-3" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/living/living2.jpg" style="width: 1349px; height: 620.54px; left: 0px; top: -211px;"></a></li><li class="slide-4" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/bath/bath1.jpg" style="width: 1349px; height: 755.44px; left: 0px; top: -278px;"></a></li><li class="slide-5 prevslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="images/bath/bath2.jpg" style="width: 1349px; height: 755.44px; left: 0px; top: -278px;"></a></li></ul>

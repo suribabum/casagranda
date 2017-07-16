@@ -1,0 +1,19 @@
+<div class="row">
+    <span class="closeWrapper">
+        <img src="images/close-box-icon.png" class="close_btn closePad"  ng-click="closeModalPopup()"/>
+    </span>
+    <h2>Locations</h2>
+    <div class="locationContainer">
+        <ul>
+            <li ng-repeat="location in locations" ng-click="showContactForm($event)">
+                <a href="{{location.addressUrl}}" target="_blank" ng-click="stopLocationPropagation($event)">{{location.city}}, {{location.state}}, {{location.country}}</a>
+                <span class="addressWrapper hidden-xs">
+                    {{location.address}}<br/>
+                    {{location.address2}}<br/>
+                    {{location.address3}}
+                </span>
+            </li>
+        </ul>
+
+    </div>
+</div>
